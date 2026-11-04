@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractions · Barangay Katutungan · Wao, Lanao del Sur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <div class="logo-text"><h3>BARANGAY KATUTUNGAN</h3><h5>WAO, LANAO DEL SUR</h5></div>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="officials.html">Officials</a>
+        <a href="attractions.html" class="active">Attractions</a>
+        <a href="services.html">Services</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Tourist Attractions</h1>
+    <p>Discover the natural beauty and cultural landmarks of Barangay Katutungan.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> / Attractions</div>
+  </div>
+
+  <main class="container" style="margin-top:30px; margin-bottom:40px;">
+    <section class="section fade-up">
+      <div class="container">
+        <h2 class="section-title"><i class="fas fa-umbrella-beach" style="margin-right:10px;"></i>Tourist Attractions</h2>
+        <p style="color:#64748b; margin-bottom:24px;">Explore our local natural sights and community spaces. Click the card image or the "Learn More" button to view full description and available services.</p>
+        
+        <div class="grid-3">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-img" style="background-image:url('image1.jpg'); background-size:cover; background-position:center; cursor:pointer;" 
+                 data-title="Eco-Park" data-image="image1.jpg" data-desc="A lush, green park featuring nature trails, picnic spots, and camping grounds. Ideal for families and outdoor enthusiasts looking for a peaceful escape." data-services="Picnic Cottage Rentals, Guided Hiking Tours, Camping Ground Access" onclick="openModal(this)"></div>
+            <h3>Pineapple Plantation</h3>
+            <p style="font-size:0.9rem; color:#64748b;">A scenic farm where fresh pineapples are grown, highlighting the area's rich agriculture and natural beauty.</p>
+            <button class="btn-gold" style="padding:8px 22px; font-size:0.82rem; margin-top:12px;" data-title="Pineapple Plantation" data-image="image1.jpg" data-desc="A scenic farm where fresh pineapples are grown, highlighting the area's rich agriculture and natural beauty." data-services="Farm Tours, Pineapple Sampling, Agricultural Workshops" onclick="openModal(this)">Learn More</button>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-img" style="background-image:url('image2.jpg'); background-size:cover; background-position:center; cursor:pointer;" 
+                 data-title="San Isidro Chapel" data-image="image2.jpg" data-desc="A historic chapel built in 1972, serving as a spiritual landmark for the community. It represents the rich cultural heritage and faith of Barangay Katutungan's early settlers." data-services="Weekly Mass Services, Wedding Blessings, Historical Tours" onclick="openModal(this)"></div>
+            <h3>Corn Plantation</h3>
+            <p style="font-size:0.9rem; color:#64748b;">A vast field of corn that showcases the barangay's rich agricultural heritage and supports the livelihood of local farmers.</p>
+            <button class="btn-gold" style="padding:8px 22px; font-size:0.82rem; margin-top:12px;" data-title="Corn Plantation" data-image="image2.jpg" data-desc="A vast field of corn that showcases the barangay's rich agricultural heritage and supports the livelihood of local farmers." data-services="Farm Tours, Corn Sampling, Agricultural Workshops" onclick="openModal(this)">Learn More</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-img" style="background-image:url('image3.jpg'); background-size:cover; background-position:center; cursor:pointer;" 
+                 data-title="Wao River" data-image="image3.jpg" data-desc="A scenic, serene river popular for boating, fishing, and cooling off on warm days. The riverbanks offer a calm environment for relaxation." data-services="Boat Rentals, Fishing Permits, Guided Riverside Walks" onclick="openModal(this)"></div>
+            <h3>UUM Farm, Resort and Restaurant:r</h3>
+            <p style="font-size:0.9rem; color:#64748b;">A relaxing destination where visitors can enjoy nature, comfortable accommodations, delicious food, and a peaceful farm environment.</p>
+            <button class="btn-gold" style="padding:8px 22px; font-size:0.82rem; margin-top:12px;" data-title="UUMA Farm, Resort and Restaurant" data-image="image3.jpg" data-desc="A scenic, serene river popular for boating, fishing, and cooling off on warm days. The riverbanks offer a calm environment for relaxation." data-services="Boat Rentals, Fishing Permits, Guided Riverside Walks" onclick="openModal(this)">Learn More</button>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-img" style="background-image:url('image6.jpg'); background-size:cover; background-position:center; cursor:pointer;" 
+                 data-title="Highland Resort" data-image="image6.jpg" data-desc="A premier local resort situated on the rolling hills, offering stunning views, swimming pools, and overnight cottages." data-services="Swimming Pool Access, Overnight Cottage Bookings, Function Hall Rental" onclick="openModal(this)"></div>
+            <h3>Wao Terminal</h3>
+            <p style="font-size:0.9rem; color:#64748b;">The main transportation hub in Wao, providing convenient access for commuters and travelers to nearby towns and cities.</p>
+            <button class="btn-gold" style="padding:8px 22px; font-size:0.82rem; margin-top:12px;" data-title="Highland Resort" data-image="image6.jpg" data-desc="A premier local resort situated on the rolling hills, offering stunning views, swimming pools, and overnight cottages." data-services="Swimming Pool Access, Overnight Cottage Bookings, Function Hall Rental" onclick="openModal(this)">Learn More</button>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card">
+            <div class="card-img" style="background-image:url('image7.jpg'); background-size:cover; background-position:center; cursor:pointer;" 
+                 data-title="Mount Katutungan" data-image="image7.jpg" data-desc="A popular peak offering panoramic views of Wao and the surrounding valleys. A favorite destination for hikers, campers, and sunrise watchers." data-services="Trekking Guides, Camping Permits, Photography Points" onclick="openModal(this)"></div>
+            <h3>Katutungan Church</h3>
+            <p style="font-size:0.9rem; color:#64748b;">A peaceful place of worship where the community gathers for prayer, religious celebrations, and spiritual reflection.</p>
+            <button class="btn-gold" style="padding:8px 22px; font-size:0.82rem; margin-top:12px;" data-title="Mount Katutungan" data-image="image4.jpg" data-desc="A popular peak offering panoramic views of Wao and the surrounding valleys. A favorite destination for hikers, campers, and sunrise watchers." data-services="Trekking Guides, Camping Permits, Photography Points" onclick="openModal(this)">Learn More</button>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card">
+            <div class="card-img" style="background-image:url('image9.jpg'); background-size:cover; background-position:center; cursor:pointer;" 
+                 data-title="Katutungan Plaza" data-image="image9.jpg" data-desc="The central community hub featuring a spacious plaza, a covered basketball court, and seating areas. It hosts barangay assemblies and local sports tournaments." data-services="Sports Equipment Rental, Public Event Reservations, Covered Court Bookings" onclick="openModal(this)"></div>
+            <h3>Mother Katutungan Court</h3>
+            <p style="font-size:0.9rem; color:#64748b;">A community sports and recreational venue where residents gather for basketball games, events, and other outdoor activities.</p>
+            <button class="btn-gold" style="padding:8px 22px; font-size:0.82rem; margin-top:12px;" data-title="Katutungan Plaza" data-image="image5.jpg" data-desc="The central community hub featuring a spacious plaza, a covered basketball court, and seating areas. It hosts barangay assemblies and local sports tournaments." data-services="Sports Equipment Rental, Public Event Reservations, Covered Court Bookings" onclick="openModal(this)">Learn More</button>
+          </div>
+
+            <!-- Card 5 -->
+          <div class="card">
+            <div class="card-img" style="background-image:url('image10.jpg'); background-size:cover; background-position:center; cursor:pointer;" 
+                 data-title="Mount Katutungan" data-image="image10.jpg" data-desc="A popular peak offering panoramic views of Wao and the surrounding valleys. A favorite destination for hikers, campers, and sunrise watchers." data-services="Trekking Guides, Camping Permits, Photography Points" onclick="openModal(this)"></div>
+            <h3>Katutungan Elementary School</h3>
+            <p style="font-size:0.9rem; color:#64748b;">A peaceful place of worship where the community gathers for prayer, religious celebrations, and spiritual reflection.</p>
+            <button class="btn-gold" style="padding:8px 22px; font-size:0.82rem; margin-top:12px;" data-title="Mount Katutungan" data-image="image4.jpg" data-desc="A popular peak offering panoramic views of Wao and the surrounding valleys. A favorite destination for hikers, campers, and sunrise watchers." data-services="Trekking Guides, Camping Permits, Photography Points" onclick="openModal(this)">Learn More</button>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card">
+            <div class="card-img" style="background-image:url('image13.jpg'); background-size:cover; background-position:center; cursor:pointer;" 
+                 data-title="Katutungan Plaza" data-image="image13.jpg" data-desc="The central community hub featuring a spacious plaza, a covered basketball court, and seating areas. It hosts barangay assemblies and local sports tournaments." data-services="Sports Equipment Rental, Public Event Reservations, Covered Court Bookings" onclick="openModal(this)"></div>
+            <h3>Rice Field</h3>
+            <p style="font-size:0.9rem; color:#64748b;">A vast agricultural area where rice is grown, providing food, supporting local farmers, and showcasing the barangay's rich farming tradition.</p>
+            <button class="btn-gold" style="padding:8px 22px; font-size:0.82rem; margin-top:12px;" data-title="Katutungan Plaza" data-image="image13.jpg" data-desc="The central community hub featuring a spacious plaza, a covered basketball court, and seating areas. It hosts barangay assemblies and local sports tournaments." data-services="Sports Equipment Rental, Public Event Reservations, Covered Court Bookings" onclick="openModal(this)">Learn More</button>
+          </div>
+ <!-- Card 5 -->
+          <div class="card">
+            <div class="card-img" style="background-image:url('image11.jpg'); background-size:cover; background-position:center; cursor:pointer;" 
+                 data-title="Mount Katutungan" data-image="image11.jpg" data-desc="A popular peak offering panoramic views of Wao and the surrounding valleys. A favorite destination for hikers, campers, and sunrise watchers." data-services="Trekking Guides, Camping Permits, Photography Points" onclick="openModal(this)"></div>
+            <h3>Katutungan Dam</h3>
+            <p style="font-size:0.9rem; color:#64748b;"> A scenic dam that provides water for nearby farms and adds to the natural beauty of Barangay Katutungan.</p>
+            <button class="btn-gold" style="padding:8px 22px; font-size:0.82rem; margin-top:12px;" data-title="Katutungan Dam" data-image="image11.jpg" data-desc="A popular peak offering panoramic views of Wao and the surrounding valleys. A favorite destination for hikers, campers, and sunrise watchers." data-services="Trekking Guides, Camping Permits, Photography Points" onclick="openModal(this)">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div id="attractionModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="document.getElementById('attractionModal').style.display='none'">&times;</span>
+      <h3 id="modalTitle" style="color:var(--blue-dark); margin-bottom:14px; font-size:1.6rem;"></h3>
+      <img id="modalImg" class="modal-img" src="" alt="">
+      <p id="modalDesc" class="modal-desc"></p>
+      <div class="modal-services">
+        <h4><i class="fas fa-hand-holding-heart" style="margin-right:6px;"></i> Available Services</h4>
+        <ul id="modalServicesList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <img src="logo.png" alt="logo" style="height:50px; border-radius:12px; background:white; padding:4px;">
+        <p style="margin-top:10px;">Barangay Katutungan</p>
+        <p style="font-size:0.82rem;">Wao, Lanao del Sur</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="officials.html">Officials</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="services.html">Services</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone" style="margin-right:6px;"></i> (000) 000-0000</p>
+        <p><i class="fas fa-envelope" style="margin-right:6px;"></i> barangaykatutungan@email.com</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social"><i class="fab fa-facebook"></i><i class="fab fa-twitter"></i><i class="fab fa-youtube"></i></div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Barangay Katutungan · Wao, Lanao del Sur. All rights reserved.</div>
+  </footer>
+
+  <button id="back2top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+    document.querySelectorAll('.fade-up').forEach(el => new IntersectionObserver((e) => { e.forEach(x => { if (x.isIntersecting) x.target.classList.add('visible'); }); }, { threshold: 0.12 }).observe(el));
+    const topBtn = document.getElementById('back2top');
+    window.addEventListener('scroll', () => { topBtn.style.display = window.scrollY > 400 ? 'block' : 'none'; });
+    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    function openModal(element) {
+      document.getElementById('modalTitle').textContent = element.dataset.title;
+      document.getElementById('modalImg').src = element.dataset.image;
+      document.getElementById('modalImg').alt = element.dataset.title;
+      document.getElementById('modalDesc').textContent = element.dataset.desc;
+      const list = document.getElementById('modalServicesList');
+      list.innerHTML = '';
+      element.dataset.services.split(', ').forEach(s => {
+        const li = document.createElement('li');
+        li.innerHTML = '<i class="fas fa-check-circle"></i> ' + s;
+        list.appendChild(li);
+      });
+      document.getElementById('attractionModal').style.display = 'flex';
+    }
+    window.addEventListener('click', (e) => { if (e.target.id === 'attractionModal') e.target.style.display = 'none'; });
+  </script>
+</body>
+</html>
